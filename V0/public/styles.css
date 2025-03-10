@@ -1,0 +1,251 @@
+/* Core styles */
+        :root {
+            --primary: #E15B4C;    /* Coral/Red */
+            --secondary: #4EC19C;  /* Mint Green */
+            --accent: #F6CE4C;     /* Gold/Yellow */
+            --accent2: #EA53A7;    /* Magenta/Pink */
+            --accent3: #4F9DE7;    /* Sky Blue */
+            --accent4: #A878E5;    /* Lavender/Purple */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            color: #000000;
+            background-color: #FFFFFF;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        h1, h2, h3 {
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            color: #000000;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+            color: #000000;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--secondary);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: #40ad8a;
+        }
+        
+        /* Main content */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .coming-soon {
+            width: 100%;
+        }
+        
+        .tagline {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+            color: var(--primary);
+        }
+        
+
+        
+        .email-form {
+            max-width: 500px;
+            margin: 2.5rem auto 0;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .email-input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            outline: none;
+        }
+        
+        .submit-btn {
+            padding: 1rem 2rem;
+            background-color: var(--secondary);
+            color: white;
+            border-radius: 50px;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: #40ad8a;
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Logo */
+        .logo {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo svg {
+            margin-right: 0.625rem;
+        }
+        
+        .multicolor-text {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+        
+        .multicolor-text span {
+            display: inline-block;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 5rem 0 2.5rem;
+            background-color: #FFFFFF;
+            border-top: 1px solid rgba(0, 0, 0, 0.03);
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3.75rem;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .footer-description {
+            color: #000000;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary);
+            transform: translateY(-5px);
+            color: white;
+        }
+        
+        .footer-heading {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        
+        .copyright {
+            margin-top: 3.75rem;
+            text-align: center;
+            color: #000000;
+            font-size: 0.875rem;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.25rem;
+            }
+            
+            .email-form {
+                flex-direction: column;
+            }
+            
+            .multicolor-text {
+                font-size: 2rem;
+            }
+        }
